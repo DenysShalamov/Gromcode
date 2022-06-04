@@ -11,7 +11,7 @@ h2 {
 }
 
 li {
-  background-color: blue;
+  color: blue;
 }
 
 p {
@@ -28,7 +28,6 @@ body> div:nth-child(5)>p {
 
 body> div:nth-child(5)>p:nth-child(3) {
   border: 5px solid white;
-  background-color: red;
 }
 
 input {
@@ -45,6 +44,10 @@ input[type = "text"] {
 
 body > div:nth-child(5)> p> em {
   font-size: 20px;
+}
+
+#special {
+  border: 2px solid blue;
 }
 
 
