@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 50px 0px 25px 50px;
+  width: 100px;
+}
+
+.box__rectangle,
+.box__ellipse {
+  height: 50px;
+}
+
+.box__rectangle {
+  border-radius: 16px;
+  background-color: forestgreen;
+}
+
+.box__ellipse {
+  border-radius: 50%;
+  background-color:darkmagenta;
+}
+
+.box__circle,
+.box__triangle {
+  height: 100px;
+}
+
+.box__circle {
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.box__triangle {
+  border: 50px solid transparent;
+  border-top-color: brown;
+}
+
