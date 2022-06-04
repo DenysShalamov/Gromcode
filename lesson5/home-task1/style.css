@@ -23,5 +23,5 @@ li.new {
 }
 
 .posted-today {
-  text-decoration: underline;
+  background-color: pink;
 }
