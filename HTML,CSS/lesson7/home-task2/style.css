@@ -44,6 +44,7 @@ input[type = "text"] {
 
 body > div:nth-child(5)> p> em {
   font-size: 20px;
+  color: white;
 }
 
 #special {
