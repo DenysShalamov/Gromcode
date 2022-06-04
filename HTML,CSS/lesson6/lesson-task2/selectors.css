@@ -1,0 +1,23 @@
+li {
+  margin-bottom: 16px;
+}
+
+ol li, ul li {
+  color: white;
+}
+
+ol li {
+  background-color: green;
+}
+
+ul li {
+  background-color: orange;
+}
+
+#special + li {
+  border: 3px solid red;
+}
+
+#special ~ li {
+  margin-left: 16px;
+}
