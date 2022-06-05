@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  padding: 50px;
+  width: default;
+  height: default;
+  border: 3px solid black;
+  background-color: aqua;
+  margin: 50px 50px;
+}
