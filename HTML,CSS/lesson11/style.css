@@ -1,0 +1,17 @@
+div > div {
+  width: 100px;
+  height: 100px;
+  background: coral;
+}
+
+.container:first-child {
+  display: none;
+}
+
+.container:nth-child(2) {
+  visibility: hidden;
+}
+
+.container:nth-child(3) {
+  visibility: visible;
+}
