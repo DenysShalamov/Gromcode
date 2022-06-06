@@ -12,12 +12,16 @@
   opacity: 0.8;
 }
 
+.dropdown:hover {
+  opacity: 1;
+}
+
 
 
 .menu-button {
   font-size: 16px;
   color: white;
-  opacity: 0.8;
+ 
 }
 
 
