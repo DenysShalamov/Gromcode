@@ -12,8 +12,8 @@
   opacity: 0.8;
 }
 
-.dropdown:hover .menu-list {
-  display: block;
+.dropdown:hover .menu-button {
+  opacity: 1;
   
 } 
 
@@ -22,9 +22,7 @@
   color: white;
 }
 
-.menu-button:hover {
-  opacity: 1;
-}
+
 
 
 
