@@ -2,20 +2,20 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 50%;
-}
 .square {
   width: 100px;
   height: 100px;
 }
 
-section {
+.container {
+  float: left;
+  width: 50%;
   background: aquamarine;
   padding: 16px;
 }
 
-footer {
+.footer {
+  clear: both;
   height: 30px;
   border: 2px solid black;
 }
@@ -28,8 +28,4 @@ footer {
 .green {
   background-color: green;
   float: left;
-}
-
-.footer {
-  clear: both;
 }
