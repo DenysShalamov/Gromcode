@@ -3,11 +3,12 @@
 }
 
 .dropdown {
-  /* display: inline-block; */
+  display: inline-block;
   margin: 16px;
   cursor: pointer;
   position: relative;
-  
+  padding: 16px;
+  background-color: darkgreen;
   opacity: 0.8;
 }
 
@@ -15,19 +16,15 @@
   opacity: 1;
 }
 
-
+.dropdown:hover .menu-list{
+ display: block;
+}
 
 .menu-button {
   font-size: 16px;
   color: white;
-  padding: 16px;
-  background-color: darkgreen;
   
 }
-
-
-
-
 
 .menu-list {
   display: none;
