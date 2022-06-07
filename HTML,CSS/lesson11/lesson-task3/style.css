@@ -9,21 +9,19 @@
   position: relative;
   padding: 16px;
   background-color: darkgreen;
-  opacity: 0.8;
+  
 }
 
-.dropdown:hover {
+.dropdown:hover .menu-button{
   opacity: 1;
 }
 
 
 
 .menu-button {
-  margin-top: 16px;
   font-size: 16px;
   color: white;
-  background-color: darkgreen;
-  padding: 16px;
+  opacity: 0.8;
 }
 
 
