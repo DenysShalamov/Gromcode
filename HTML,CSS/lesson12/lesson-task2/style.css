@@ -6,3 +6,23 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.header {
+  text-align: center;
+}
+
+.header__text {
+  font-size: 74px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.center-text {
+  height: 200px;
+  background-color: coral;
+  color: white;
+  text-transform: uppercase;
+  line-height: 200px;
+  text-align: center;
+}
+
