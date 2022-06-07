@@ -4,5 +4,13 @@
 
 .gallery {
   display: flex;
-  
+  overflow: auto;
+}
+
+.gallery:hover {
+  cursor: all-scroll;
+}
+
+.thumb {
+  margin: 8px;
 }
