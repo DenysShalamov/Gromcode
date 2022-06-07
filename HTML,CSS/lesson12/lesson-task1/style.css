@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+section {
+  margin: 32px;
+}
+
+h1 {
+  word-spacing: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 28px;
+}
+
+p::first-letter {
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 24px;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: italic;
+  color: gray;
+}
