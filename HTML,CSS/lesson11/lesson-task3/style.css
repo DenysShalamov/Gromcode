@@ -7,7 +7,6 @@
   margin: 16px;
   cursor: pointer;
   position: relative;
-  padding: 16px;
   background-color: darkgreen;
   opacity: 0.8;
 }
@@ -23,7 +22,8 @@
 .menu-button {
   font-size: 16px;
   color: white;
-  
+  display: block;
+  padding: 16px;
 }
 
 .menu-list {
