@@ -19,9 +19,11 @@
 
 
 .menu-button {
+  margin-top: 16px;
   font-size: 16px;
   color: white;
- 
+  background-color: darkgreen;
+  
 }
 
 
@@ -48,5 +50,3 @@
 .menu-item:hover {
   background-color: ghostwhite;
 }
-
-
