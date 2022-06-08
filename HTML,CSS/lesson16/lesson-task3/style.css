@@ -16,7 +16,6 @@ input[type = "checkbox"] {
 
 .checkmark {
   position: absolute;
-  /* display: inline-block; */
   left: 0;
   top: 0;
   width: 25px;
