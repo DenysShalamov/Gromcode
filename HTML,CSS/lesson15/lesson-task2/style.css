@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.image-container {
+  margin: 50px 0px;
+}
+
+.main-img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.card {
+  margin: 16px;
+  box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
+}
+
+.card .card__img:first-child {
+  filter: opacity(50%);
+}
+
+.card .card__img:nth-child(2) {
+  filter: blur(4px);
+}
+
+.card .card__img:nth-child(3) {
+  filter: invert(100%);
+}
+
+.card__caption {
+  height: 30px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
