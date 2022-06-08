@@ -9,17 +9,15 @@ input[type = "checkbox"] {
 }
 
 .checkbox {
-  display: block;
   position: relative;
   padding-left: 35px;
   font-size: 24px;
   margin: 16px;
-  height: 25px;
 }
 
 .checkmark {
   position: absolute;
-  display: block;
+  display: inline-block;
   left: 0;
   top: 0;
   width: 25px;
