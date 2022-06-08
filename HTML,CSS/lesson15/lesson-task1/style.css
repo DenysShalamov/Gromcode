@@ -35,8 +35,8 @@
 }
 
 .card__caption {
-  height: 30px;
   text-align: center;
   text-transform: lowercase;
+  line-height: 30px;
 }
 
