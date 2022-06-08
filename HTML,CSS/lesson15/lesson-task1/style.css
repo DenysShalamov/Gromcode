@@ -22,15 +22,15 @@
   box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
 }
 
-.card .card__img:first-child {
+ .card:first-child .card__img{
   filter: opacity(50%);
 }
 
-.card .card__img:nth-child(2) {
+ .card:nth-child(2) .card__img{
   filter: blur(4px);
 }
 
-.card .card__img:nth-child(3) {
+ .card:last-child .card__img{
   filter: invert(100%);
 }
 
