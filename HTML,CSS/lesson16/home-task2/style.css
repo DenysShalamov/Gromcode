@@ -6,6 +6,9 @@
   margin: 32px;
 }
 
-.form-control, input[type="radio"] {
+.form-control {
   margin: 8px;
+}
+.language {
+  display: inline;
 }
