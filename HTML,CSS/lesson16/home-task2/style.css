@@ -9,6 +9,8 @@
 .form-control {
   margin: 8px;
 }
-.language {
+.language-option {
   display: inline;
+  margin: 0;
+  padding: 0;
 }
