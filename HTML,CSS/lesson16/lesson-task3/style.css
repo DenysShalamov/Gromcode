@@ -15,11 +15,12 @@ input[type = "checkbox"] {
 }
 
 .checkmark {
+  display: inline-block;
   position: absolute;
-  left: 0;
-  top: 0;
   width: 25px;
   height: 25px;
+  left: 0;
+  top: 0;
   background-color: #d3d3d3;
 }
 
