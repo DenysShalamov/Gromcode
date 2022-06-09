@@ -3,15 +3,14 @@
 }
 
 body {
-  position: relative;
+  display: flex;
   background-color: #ffe4c4;
+  align-items: center;
+  justify-content: center;
 }
 
 .page {
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 300px;
   margin-top: 25vh;
 }
