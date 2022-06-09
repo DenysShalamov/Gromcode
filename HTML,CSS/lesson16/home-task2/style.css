@@ -6,6 +6,6 @@
   margin: 32px;
 }
 
-.form-control {
+.form-control, input[type="radio"] {
   margin: 8px;
 }
