@@ -15,12 +15,9 @@
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
+  animation: blinking 2s infinite linear;
 }
 
-.spinner-text {
-  animation: blinking 2s infinite linear;
-  
-}
 
 .rect {
   position: absolute;
@@ -28,7 +25,7 @@
   height: 4px;
   background-color: #000;
   border-radius: 2px;
-  animation: blinking 2s infinite linear, moving 2s infinite alternate-reverse;
+  animation: moving 2s infinite alternate-reverse linear;
   
 }
 @keyframes moving {
