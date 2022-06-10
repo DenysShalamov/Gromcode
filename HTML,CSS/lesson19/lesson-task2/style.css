@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ff7f50;
+  position: absolute;
+  animation: move 4s 2;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: #ff7f50;
+  }
+
+  25% {
+    left: 300px;
+    top: 0;
+    background-color: #6495ed;
+  }
+
+  50% {
+    left: 300px;
+    top: 300px;
+    background-color: #00ffff;
+  }
+
+  75% {
+    left: 0px;
+    top: 300px;
+    background-color: #9acd32;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #ff7f50;
+  }
+}
