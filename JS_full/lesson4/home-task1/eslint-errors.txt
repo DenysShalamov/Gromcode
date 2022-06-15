@@ -1,5 +1,5 @@
 no-var
-eqeqed
+eqeqeq
 no-undef
 no-plusplus
 no-return-assign
