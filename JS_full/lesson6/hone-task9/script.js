@@ -7,4 +7,4 @@ const withdraw = function (clients, balances, client, amount) {
   return balances[clients.indexOf(client)];
 };
 
-console.log(withdraw(["Ann", "John", "User"], [1400, 87, -6], "John", 50));
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50));
