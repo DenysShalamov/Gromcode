@@ -60,13 +60,13 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 0 0.5em;
 }
 
 .nav-list-link {
   text-decoration: none;
   color: #fff;
   line-height: 2em;
-  padding: 0 0.5em;
 }
 
 .section {
