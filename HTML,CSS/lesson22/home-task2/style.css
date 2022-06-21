@@ -19,7 +19,6 @@ body {
   color: #fff;
   text-align: center;
   background: linear-gradient(60deg, #ff0000, #ffa500);
-  width: 100%;
 }
 
 h1 {
@@ -27,14 +26,8 @@ h1 {
   padding: 21.44px;
 }
 
-.main-img {
-  max-width: 100%;
-
-} 
-
 .main {
   display: flex;
-  flex-direction: column;
   flex: 1 0 auto;
 }
 
@@ -49,13 +42,11 @@ h1 {
 .section,
 .news {
   padding: 0.5em;
-  min-width: 100%;
 }
 
-/* .navigation {
+.navigation {
   width: 20%;
-  
-} */
+}
 
 .nav-list {
   list-style-type: none;
@@ -99,8 +90,43 @@ h1 {
   font-weight: 700;
 }
 
-@media  screen and (min-width: 600px) {
-  .container {
+.news {
+  width: 20%;
+}
+
+.main-img {
+  width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
     display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
   }
+
+  .navigation,
+  .section,
+  .news {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .news {
+    width: 100%;
+  }
+  
 }
