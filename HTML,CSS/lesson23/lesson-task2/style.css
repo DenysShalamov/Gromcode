@@ -9,6 +9,8 @@ body {
 
 .container {
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .square {
@@ -35,7 +37,7 @@ body {
 
 @media screen and (orientation: landscape) {
   .container {
-    display: flex;
+    flex-direction: row;
   }
 }
 
