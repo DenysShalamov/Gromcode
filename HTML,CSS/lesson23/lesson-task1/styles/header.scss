@@ -1,18 +1,18 @@
 @import 'variables.scss';
 
 .header {
-  display: flex;
-  align-items: center;
-  height: $unit * 7;
+  
   background-color: $color-grey;
 }
 
 .nav-list {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  height: $unit * 7;
   &__item {
-    display: inline;
     border-radius: $border-radius;
     color: $text-color-secondary;
     margin-left: $unit;
