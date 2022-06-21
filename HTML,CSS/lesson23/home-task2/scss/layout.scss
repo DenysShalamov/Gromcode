@@ -1,0 +1,52 @@
+@import 'breackpoints.scss';
+
+.block {
+  height: 200px;
+
+  &__navigation {
+    background-color: #ff7f50;
+  }
+
+  &__product-list {
+    background-color: #006400;
+  }
+
+  &__news {
+    background-color: #0ff;
+  }
+
+  &__navigation,
+  &__product-list,
+  &__news {
+    display: flex;
+
+    @include for-medium-screen {
+      flex: 1 1;
+    }
+  }
+
+  &__navigation_inner,
+  &__product-list_inner,
+  &__news_inner {
+    margin: auto;
+    padding: 8px;
+    background-color: #faebd7;
+    border-radius: 4px;
+  }
+}
+
+.product__items {
+  @include for-medium-screen {
+    display: flex;
+  }
+
+  @include for-large-screen {
+    flex: 2 1;
+  }
+}
+
+.container {
+  @include for-large-screen {
+    display: flex;
+  }
+}
