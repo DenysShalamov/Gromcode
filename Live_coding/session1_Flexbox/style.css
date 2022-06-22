@@ -8,9 +8,7 @@
   min-height: 200px;
 }
 
-.products {
-  display: flex;
-}
+
 
 .products-list {
   display: flex;
@@ -40,7 +38,7 @@ span {
 
   .navigation,
   .products-list {
-    flex: 1;
+    flex: 1 ;
   }
 }
 
