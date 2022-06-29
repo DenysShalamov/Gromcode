@@ -1,4 +1,4 @@
-const flatArray = (arr) =>
+const flatArray = arr =>
   arr
     .slice()
     .reduce((acc, elem) => acc.concat(elem), [])
