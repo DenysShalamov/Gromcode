@@ -8,7 +8,7 @@
 // вернуть массив
 
 const getRandomNumbers = (length, from, to) => {
-  if (to - from < 0) {
+  if (to - from < 1) {
     return null;
   }
   return [...new Array(length)].map(() => Math.round(Math.random() * (to - from) + from));
