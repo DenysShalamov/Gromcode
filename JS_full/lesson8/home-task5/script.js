@@ -1,6 +1,4 @@
-/* eslint-disable no-restricted-syntax */
-
-const getAdults = obj => {
+export const getAdults = obj => {
   const resObj = {};
 
   for (const key in obj) {
@@ -8,7 +6,6 @@ const getAdults = obj => {
       resObj[key] = obj[key];
     }
   }
-  // eslint-disable-next-line dot-notation
   return resObj;
 };
 
