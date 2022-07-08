@@ -1,5 +1,7 @@
 export const setTitle = function (text) {
-  document.querySelector('.title').textContent = text;
+  if (typeof text === 'string') {
+    document.querySelector('.title').textContent = text;
+  }
 };
 
 console.dir(setTitle('sdfgdfg'));
