@@ -15,15 +15,6 @@ const clearInner = () => {
   eventsList.innerHTML = '';
 };
 
-const removeHandler = () => {
-  rectDiv.removeEventListener('click', greyDivLogger, true);
-  rectDiv.removeEventListener('click', greenDivLogger);
-  rectP.removeEventListener('click', greenPLogger);
-  rectP.removeEventListener('click', greyPLogger, true);
-  rectSpan.removeEventListener('click', greenSpanLogger);
-  rectSpan.removeEventListener('click', greySpanLogger, true);
-};
-
 const greenDivLogger = addInner.bind(null, 'div', 'green');
 const greyDivLogger = addInner.bind(null, 'div', 'grey');
 const greenPLogger = addInner.bind(null, 'p', 'green');
@@ -38,6 +29,15 @@ const divLogger = () => {
   rectP.addEventListener('click', greyPLogger, true);
   rectSpan.addEventListener('click', greenSpanLogger);
   rectSpan.addEventListener('click', greySpanLogger, true);
+};
+
+const removeHandler = () => {
+  rectDiv.removeEventListener('click', greyDivLogger, true);
+  rectDiv.removeEventListener('click', greenDivLogger);
+  rectP.removeEventListener('click', greenPLogger);
+  rectP.removeEventListener('click', greyPLogger, true);
+  rectSpan.removeEventListener('click', greenSpanLogger);
+  rectSpan.removeEventListener('click', greySpanLogger, true);
 };
 
 clearBtn.addEventListener('click', clearInner);
