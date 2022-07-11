@@ -6,48 +6,40 @@ const clearBtn = document.querySelector('.clear-btn');
 const removeBtn = document.querySelector('.remove-handlers-btn');
 const attachBtn = document.querySelector('.attach-handlers-btn');
 
-const logTarget = function (text, color) {
+const logTarget = (text, color) => {
   eventsListElem.innerHTML += `<span style= "color: ${color}; margin-left: 8px"">${text}</span>`;
 };
 
-const logGreenDiv = () => logTarget('div', 'green');
-const logGreenP = () => logTarget('p', 'green');
-const logGreenSpan = () => logTarget('span', 'green');
-
-const logGrayDiv = () => logTarget('div', 'gray');
-const logGrayP = () => logTarget('p', 'gray');
-const logGraySpan = () => logTarget('span', 'gray');
-
-const attach = function () {
-  rectDivElem.addEventListener('click', logGrayDiv, true);
-  rectPElem.addEventListener('click', logGrayP, true);
-  rectSpanElem.addEventListener('click', logGraySpan, true);
-
-  rectDivElem.addEventListener('click', logGreenDiv);
-  rectPElem.addEventListener('click', logGreenP);
-  rectSpanElem.addEventListener('click', logGreenSpan);
-};
-
-attach();
-
-const clear = function () {
+const clearEventList = () => {
   eventsListElem.textContent = '';
 };
-const clearEventList = () => clear();
-clearBtn.addEventListener('click', clearEventList);
 
-const remove = function () {
+const logGreenDiv = logTarget.bind(null, 'div', 'green');
+const logGreenP = logTarget.bind(null, 'p', 'green');
+const logGreenSpan = logTarget.bind(null, 'span', 'green');
+const logGrayDiv = logTarget.bind(null, 'div', 'gray');
+const logGrayP = logTarget.bind(null, 'p', 'gray');
+const logGraySpan = logTarget.bind(null, 'span', 'gray');
+
+const attach = () => {
+  rectDivElem.addEventListener('click', logGreenDiv);
+  rectDivElem.addEventListener('click', logGrayDiv, true);
+  rectPElem.addEventListener('click', logGreenP);
+  rectPElem.addEventListener('click', logGrayP, true);
+  rectSpanElem.addEventListener('click', logGreenSpan);
+  rectSpanElem.addEventListener('click', logGraySpan, true);
+};
+
+const removeEvents = () => {
   rectDivElem.removeEventListener('click', logGreenDiv);
-  rectPElem.removeEventListener('click', logGreenP);
-  rectSpanElem.removeEventListener('click', logGreenSpan);
-
   rectDivElem.removeEventListener('click', logGrayDiv, true);
+  rectPElem.removeEventListener('click', logGreenP);
   rectPElem.removeEventListener('click', logGrayP, true);
+  rectSpanElem.removeEventListener('click', logGreenSpan);
   rectSpanElem.removeEventListener('click', logGraySpan, true);
 };
-const removeEvents = () => remove();
+
+clearBtn.addEventListener('click', clearEventList);
 removeBtn.addEventListener('click', removeEvents);
-
-const attachEvents = () => attach();
-
-attachBtn.addEventListener('click', attachEvents);
+attachBtn.addEventListener('click', attach);
+attach();
