@@ -37,24 +37,32 @@ rectSpanElem.addEventListener('click', logGraySpan, true);
 
 // attach();
 
-// const clear = function () {
-//   eventsListElem.textContent = '';
-// };
-// const clearEventList = () => clear();
-// clearBtn.addEventListener('click', clearEventList);
+const clear = function () {
+  eventsListElem.textContent = '';
+};
+const clearEventList = () => clear();
+clearBtn.addEventListener('click', clearEventList);
 
-// const remove = function () {
-//   rectDivElem.removeEventListener('click', logGreenDiv);
-//   rectPElem.removeEventListener('click', logGreenP);
-//   rectSpanElem.removeEventListener('click', logGreenSpan);
+const remove = function () {
+  rectDivElem.removeEventListener('click', logGreenDiv);
+  rectPElem.removeEventListener('click', logGreenP);
+  rectSpanElem.removeEventListener('click', logGreenSpan);
 
-//   rectDivElem.removeEventListener('click', logGrayDiv, true);
-//   rectPElem.removeEventListener('click', logGrayP, true);
-//   rectSpanElem.removeEventListener('click', logGraySpan, true);
-// };
-// const removeEvents = () => remove();
-// removeBtn.addEventListener('click', removeEvents);
+  rectDivElem.removeEventListener('click', logGrayDiv, true);
+  rectPElem.removeEventListener('click', logGrayP, true);
+  rectSpanElem.removeEventListener('click', logGraySpan, true);
+};
+const removeEvents = () => remove();
+removeBtn.addEventListener('click', removeEvents);
 
-// const attachEvents = () => attach();
+const attachEvents = () => {
+  rectDivElem.addEventListener('click', logGreenDiv);
+  rectPElem.addEventListener('click', logGreenP);
+  rectSpanElem.addEventListener('click', logGreenSpan);
 
-// attachBtn.addEventListener('click', attachEvents);
+  rectDivElem.addEventListener('click', logGrayDiv, true);
+  rectPElem.addEventListener('click', logGrayP, true);
+  rectSpanElem.addEventListener('click', logGraySpan, true);
+};
+
+attachBtn.addEventListener('click', attachEvents);
