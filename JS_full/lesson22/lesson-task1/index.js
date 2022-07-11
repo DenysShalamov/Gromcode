@@ -18,24 +18,25 @@ const logGrayDiv = () => logTarget('div', 'gray');
 const logGrayP = () => logTarget('p', 'gray');
 const logGraySpan = () => logTarget('span', 'gray');
 
-rectDivElem.addEventListener('click', logGreenDiv);
-rectPElem.addEventListener('click', logGreenP);
-rectSpanElem.addEventListener('click', logGreenSpan);
+rectDivElem.addEventListener('click', logGreenDiv); // всплытие
+rectPElem.addEventListener('click', logGreenP); // всплытие
+rectSpanElem.addEventListener('click', logGreenSpan); // всплытие
 
-rectDivElem.addEventListener('click', logGrayDiv, true);
-rectPElem.addEventListener('click', logGrayP, true);
-rectSpanElem.addEventListener('click', logGraySpan, true);
-// const attach = function () {
-//   rectDivElem.addEventListener('click', logGreenDiv);
-//   rectPElem.addEventListener('click', logGreenP);
-//   rectSpanElem.addEventListener('click', logGreenSpan);
+rectDivElem.addEventListener('click', logGrayDiv, true); // падение
+rectPElem.addEventListener('click', logGrayP, true); // падение
+rectSpanElem.addEventListener('click', logGraySpan, true); // падение
 
-//   rectDivElem.addEventListener('click', logGrayDiv, true);
-//   rectPElem.addEventListener('click', logGrayP, true);
-//   rectSpanElem.addEventListener('click', logGraySpan, true);
-// };
+const attach = function () {
+  rectDivElem.addEventListener('click', logGreenDiv);
+  rectPElem.addEventListener('click', logGreenP);
+  rectSpanElem.addEventListener('click', logGreenSpan);
 
-// attach();
+  rectDivElem.addEventListener('click', logGrayDiv, true);
+  rectPElem.addEventListener('click', logGrayP, true);
+  rectSpanElem.addEventListener('click', logGraySpan, true);
+};
+
+attach();
 
 const clear = function () {
   eventsListElem.textContent = '';
@@ -55,14 +56,6 @@ const remove = function () {
 const removeEvents = () => remove();
 removeBtn.addEventListener('click', removeEvents);
 
-const attachEvents = () => {
-  rectDivElem.addEventListener('click', logGreenDiv);
-  rectPElem.addEventListener('click', logGreenP);
-  rectSpanElem.addEventListener('click', logGreenSpan);
-
-  rectDivElem.addEventListener('click', logGrayDiv, true);
-  rectPElem.addEventListener('click', logGrayP, true);
-  rectSpanElem.addEventListener('click', logGraySpan, true);
-};
+const attachEvents = () => attach();
 
 attachBtn.addEventListener('click', attachEvents);
