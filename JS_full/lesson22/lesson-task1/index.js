@@ -18,14 +18,6 @@ const logGrayDiv = () => logTarget('div', 'gray');
 const logGrayP = () => logTarget('p', 'gray');
 const logGraySpan = () => logTarget('span', 'gray');
 
-rectDivElem.addEventListener('click', logGreenDiv); // всплытие
-rectPElem.addEventListener('click', logGreenP); // всплытие
-rectSpanElem.addEventListener('click', logGreenSpan); // всплытие
-
-rectDivElem.addEventListener('click', logGrayDiv, true); // падение
-rectPElem.addEventListener('click', logGrayP, true); // падение
-rectSpanElem.addEventListener('click', logGraySpan, true); // падение
-
 const attach = function () {
   rectDivElem.addEventListener('click', logGreenDiv);
   rectPElem.addEventListener('click', logGreenP);
