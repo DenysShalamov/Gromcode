@@ -14,6 +14,15 @@ const clearEventList = () => {
   eventsListElem.textContent = '';
 };
 
+const removeEvents = () => {
+  rectDivElem.removeEventListener('click', logGreenDiv);
+  rectDivElem.removeEventListener('click', logGrayDiv, true);
+  rectPElem.removeEventListener('click', logGreenP);
+  rectPElem.removeEventListener('click', logGrayP, true);
+  rectSpanElem.removeEventListener('click', logGreenSpan);
+  rectSpanElem.removeEventListener('click', logGraySpan, true);
+};
+
 const logGreenDiv = logTarget.bind(null, 'div', 'green');
 const logGreenP = logTarget.bind(null, 'p', 'green');
 const logGreenSpan = logTarget.bind(null, 'span', 'green');
@@ -28,15 +37,6 @@ const attach = () => {
   rectPElem.addEventListener('click', logGrayP, true);
   rectSpanElem.addEventListener('click', logGreenSpan);
   rectSpanElem.addEventListener('click', logGraySpan, true);
-};
-
-const removeEvents = () => {
-  rectDivElem.removeEventListener('click', logGreenDiv);
-  rectDivElem.removeEventListener('click', logGrayDiv, true);
-  rectPElem.removeEventListener('click', logGreenP);
-  rectPElem.removeEventListener('click', logGrayP, true);
-  rectSpanElem.removeEventListener('click', logGreenSpan);
-  rectSpanElem.removeEventListener('click', logGraySpan, true);
 };
 
 clearBtn.addEventListener('click', clearEventList);
