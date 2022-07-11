@@ -4,4 +4,4 @@ export const setTitle = function (text = '') {
 };
 
 // console.dir(setTitle('sdfgdfg'));
-setTitle('sdfsdf');
+setTitle(null);
