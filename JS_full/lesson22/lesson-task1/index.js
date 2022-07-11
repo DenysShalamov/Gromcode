@@ -8,7 +8,7 @@ const removeBtn = document.querySelector('.remove-handlers-btn');
 const attachBtn = document.querySelector('.attach-handlers-btn');
 
 const logTarget = (text, color) => {
-  eventsListElem.innerHTML += `<span style= "color: ${color}; margin-left: 8px"">${text}</span>`;
+  eventsListElem.innerHTML += `<span style= "color: ${color}; margin-left: 8px">${text}</span>`;
 };
 
 const clearEventList = () => {
@@ -27,10 +27,10 @@ const removeEvents = () => {
 };
 
 const logGreenDiv = logTarget.bind(null, 'div', 'green');
-const logGreenP = logTarget.bind(null, 'p', 'green');
-const logGreenSpan = logTarget.bind(null, 'span', 'green');
 const logGrayDiv = logTarget.bind(null, 'div', 'gray');
+const logGreenP = logTarget.bind(null, 'p', 'green');
 const logGrayP = logTarget.bind(null, 'p', 'gray');
+const logGreenSpan = logTarget.bind(null, 'span', 'green');
 const logGraySpan = logTarget.bind(null, 'span', 'gray');
 
 const attach = () => {
