@@ -19,13 +19,13 @@ const logGrayP = () => logTarget('p', 'gray');
 const logGraySpan = () => logTarget('span', 'gray');
 
 const attach = function () {
-  rectDivElem.addEventListener('click', logGrayDiv, true);
-  rectPElem.addEventListener('click', logGrayP, true);
-  rectSpanElem.addEventListener('click', logGraySpan, true);
-
   rectDivElem.addEventListener('click', logGreenDiv);
   rectPElem.addEventListener('click', logGreenP);
   rectSpanElem.addEventListener('click', logGreenSpan);
+
+  rectDivElem.addEventListener('click', logGrayDiv, true);
+  rectPElem.addEventListener('click', logGrayP, true);
+  rectSpanElem.addEventListener('click', logGraySpan, true);
 };
 
 attach();
