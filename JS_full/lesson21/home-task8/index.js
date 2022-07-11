@@ -15,4 +15,4 @@ export const finishList = function () {
   document.querySelector('.special').after(listItemAfter);
 };
 
-finishList();
+// finishList();
