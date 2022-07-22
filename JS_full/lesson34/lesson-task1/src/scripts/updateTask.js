@@ -14,24 +14,21 @@ const deleteTaskElem = target => {
     });
 };
 
-export const onToggleTask = ({ target }) => {
-  if (target.tagName === 'Li') {
-    // eslint-disable-next-line no-param-reassign
-    target = target.querySelector(`input[type="checkbox"]`);
-    // eslint-disable-next-line no-param-reassign
-    target.checked = !target.checked;
-  } else if (target.classList.contains('list-item__delete-btn')) {
-    deleteTaskElem(target);
+export const onToggleTask = e => {
+  const isCheckBox = e.target.classList.contains('list-item__checkbox');
+
+  if (!isCheckBox) {
     return;
   }
 
-  const taskId = target.dataset.id;
-  const tasksList = getItem('tasksList') || [];
-  const { text } = tasksList.find(idEl => idEl.id === taskId);
-  const done = target.checked;
+  const taskId = e.target.dataset.id;
+  const done = e.target.checked;
+  const tasksList = getItem('tasksList');
+  const { text, createDate } = tasksList.find(task => task.id === taskId);
 
   const updatedTask = {
     text,
+    createDate,
     done,
     finishDate: done ? new Date().toString() : null,
   };
