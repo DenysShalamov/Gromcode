@@ -15,18 +15,6 @@ const deleteTaskElem = target => {
     });
 };
 
-const deleteTasks = target => {
-  const parent = target.closest('.list-item').querySelector(`input[type="checkbox"]`);
-  const taskId = parent.dataset.id;
-
-  deleteTask(taskId)
-    .then(() => getTasksList())
-    .then(newTasksList => {
-      setItem('tasksList', newTasksList);
-      renderTasks();
-    });
-};
-
 export const onToggleTask = ({ target }) => {
   if (target.tagName === 'LI') {
     target = target.querySelector(`input[type="checkbox"]`);
