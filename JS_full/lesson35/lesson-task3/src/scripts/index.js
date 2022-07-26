@@ -5,7 +5,7 @@ import { showSpinner, hideSpinner } from './spinner.js';
 
 // Юзер пустышка для отображения при первой загрузке сайта
 const defaultUser = {
-  avatar_url: 'https://avatars3.githubusercontent.com/u10002',
+  avatar_url: 'https://avatars3.githubusercontent.com/u10001',
   name: '',
   location: '',
 };
@@ -19,7 +19,9 @@ const userNameInputElem = document.querySelector('.name-form__input'); // эле
 const onSearchUser = () => {
   showSpinner(); // показываем спиннер
   cleanReposList(); // при каждом новом поиске юзера и репо старые данные удаляем
+
   const userName = userNameInputElem.value; // получаем имя пользователя с инпута
+
   fetchUserData(userName)
     .then(userData => {
       renderUserData(userData); // подписываемся на результат вызова сервера и вызываем ф-цию отрисовки информации юзера.
