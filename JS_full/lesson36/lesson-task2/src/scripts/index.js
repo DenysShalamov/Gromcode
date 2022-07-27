@@ -20,8 +20,8 @@ const onSearchUser = async () => {
   showSpinner(); // показываем спиннер
   cleanReposList(); // при каждом новом поиске юзера и репо старые данные удаляем
   // здесь могут появляться ошибки
+  const userName = userNameInputElem.value; // получаем имя пользователя с инпута
   try {
-    const userName = userNameInputElem.value; // получаем имя пользователя с инпута
     const userData = await fetchUserData(userName); // получаем данные узера (ф=ция возвращает промис но с await получаем значение промиса => obj)
     renderUserData(userData); // выводим данные юзера на страницу
     const reposList = await fetchRepos(userData.repos_url); // вызываем ф-цию поиска репо по ссылке

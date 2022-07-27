@@ -12,7 +12,7 @@ export const fetchUserData = async userName => {
 
 // ф-ция запроса репозиториев юзера на сервер
 export const fetchRepos = async url => {
-  const response = fetch(url);
+  const response = await fetch(url);
 
   if (response.ok) {
     const repoData = await response.json();
